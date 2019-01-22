@@ -1,4 +1,4 @@
-# flickr-feed
+# flickr-photos-api
 
 This a single page PWA, built with vue-cli and workbox. 
 
