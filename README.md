@@ -1,13 +1,21 @@
 # flickr-feed
 
-This a single page pwa, built with vue-cli and workbox. 
+This a single page PWA, built with vue-cli and workbox. 
 
 Contains two routs: 
 1. Home - displays lates photoes uploaded on flickr
 
 2. Search - Options to search flickr photos by name, description and tags.
 
+Cache strategies: 
+  - Static files (.html, .js, .css, .png, .jpg, .ico) - Cache first
+  - CDN libraries - Cache first
+  - API calls - Network first
+
+Application supports offline mode, when build for production
+
 Live example https://flickr-api-photos.herokuapp.com
+
 ## Project setup
 
 Project requires vue-cli to be installed - version 3.3.0 is used.
