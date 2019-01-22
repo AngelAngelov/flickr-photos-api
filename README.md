@@ -1,7 +1,20 @@
 # flickr-feed
 
+This a single page pwa, built with vue-cli and workbox. 
+
+Contains twwo routs: 
+1. Home - displays lates photoes uploaded on flickr
+
+2. Search - Options to search flickr photos by name, description and tags.
+
+Live example https://flickr-api-photos.herokuapp.com
 ## Project setup
 ```
+Project requires vue-cli to be installed - version 3.3.0 is used.
+Run: 
+npm install -g @vue/cli@3.3.0
+
+Run:
 npm install
 ```
 
@@ -15,11 +28,6 @@ npm run serve
 npm run build
 ```
 
-### Run your tests
-```
-npm run test
-```
-
 ### Lints and fixes files
 ```
 npm run lint
@@ -27,6 +35,9 @@ npm run lint
 
 ### Run your end-to-end tests
 ```
+
+### IMPORTANT: pwa config in vue.config.js need to be commented to run the e2e test. PWA setup breacks the dev server setup for the e2e tests.
+
 npm run test:e2e
 ```
 
