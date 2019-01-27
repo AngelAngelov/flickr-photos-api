@@ -26,7 +26,7 @@ import axios from 'axios';
 import { api } from "../assets/constants";
 
 function buildUrl(method, page, itemsPerPage) {
-    return `${api.baseUrl}?method=${method}&api_key=${api.key}&page=${page || 1}&per_page=${itemsPerPage || api.defaultPageSize}&format=json&nojsoncallback=1&extras=${api.extras.join(',')}`;
+    return `${api.baseUrl}?method=${method}&safe_search=1&api_key=${api.key}&page=${page || 1}&per_page=${itemsPerPage || api.defaultPageSize}&format=json&nojsoncallback=1&extras=${api.extras.join(',')}`;
 }
 
 function getRecentFeed(page = 1, itemsPerPage) {
