@@ -69,7 +69,7 @@ export default {
     },
     scroll() {
       let that = this;
-      window.onscroll = () => {
+      window.addEventListener('scroll', () => {
         //chech is we have reached bottom of the page to load next items
         if (
           !that.isLoading &&
@@ -82,7 +82,7 @@ export default {
             that.end = true;
           }
         }
-      };
+      });
     }
   },
   mounted: function() {
